@@ -30,6 +30,12 @@ public class StringTest03 {
 			System.out.println(str);
 		}
 
+		// format
+		String name = "둘리";
+		int score = 100;
+		System.out.println(name + "님의 점수는 " + score + "점 입니다.");
+		System.out.println(String.format("%s님의 점수는 %d점 입니다.", name, score));
+
 		//
 		// String s = "Hello " + "World " + 2018;
 		// String Buffer
