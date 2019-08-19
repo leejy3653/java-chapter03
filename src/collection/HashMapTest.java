@@ -9,7 +9,7 @@ public class HashMapTest {
 	public static void main(String[] args) {
 		// Map<Money, Integer> map = new HashMap<Money, Integer>();
 		// Money m = new Money(1);
-		// map.put(m, 1); // autoboxing //아래가 맞는 방식
+		// map.put(m, 1); //아래가 맞는 방식
 
 		Map<String, Integer> map = new HashMap<String, Integer>(); // String -> 불변
 
