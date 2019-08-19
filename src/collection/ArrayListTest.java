@@ -7,7 +7,8 @@ import java.util.List;
 public class ArrayListTest {
 
 	public static void main(String[] args) {
-		List<String> list = new ArrayList<String>(); // VectorTest class의 Vector< >를 -> Array< >로 변경만하면 끝 -> 그후  ctrl+shift+O로 import
+		List<String> list = new ArrayList<String>(); // VectorTest class의 Vector< >를 -> Array< >로 변경만하면 끝 -> 그후
+														// ctrl+shift+O로 import
 
 		list.add("들리");
 		list.add("마이콜");
