@@ -11,12 +11,11 @@ public class InputStreamReaderTest {
 		InputStreamReader isr = null;
 		try {
 			isr = new InputStreamReader(new FileInputStream("ms949.txt"), "MS949");
-			
 			int data = -1;
-			while((data = isr.read()) != -1) {
-				System.out.print((char)data);
+			while ((data = isr.read()) != -1) {
+				System.out.print((char) data);
 			}
-		} catch(FileNotFoundException e) {
+		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found:" + e);
 		} catch (UnsupportedEncodingException e) {
 			System.out.println("Unsupported Encoding:" + e);
@@ -24,14 +23,12 @@ public class InputStreamReaderTest {
 			System.out.println("error:" + e);
 		} finally {
 			try {
-				if(isr != null) {
+				if (isr != null) {
 					isr.close();
 				}
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
-		
 	}
 }
